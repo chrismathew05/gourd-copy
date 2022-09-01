@@ -1,0 +1,119 @@
+/* CSS declarations go here */
+/*.ui.modal {*/
+/*margin-top: 0 !important;*/
+/*}*/
+
+#navBar {
+  height: 52px;
+}
+
+#appContent {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+#appContent::-webkit-scrollbar {
+  display: none;
+}
+
+.cropRectangle {
+    border: 1px solid #FF0000;
+    position: absolute;
+}
+
+.cropLineY {
+    border: 1px solid #FF0000;
+    position: absolute;
+    width: 1px
+}
+
+.cropLineX {
+    border: 1px solid #FF0000;
+    position: absolute;
+    height: 1px
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+  #navBar {
+    position: fixed;
+    top: -15px;
+  }
+
+  #appContent {
+    position: fixed;
+    height: 95%;
+    overflow-y: auto;
+    max-width: 100%;
+    overflow-x: hidden;
+    left: 65px;
+    top: 65px;
+    right: 0.8%;
+  }
+
+  #searchInput {
+      width: 900px
+  }
+  /*#searchInput {*/
+    /*width: 150px;*/
+    /*height: 35px;*/
+
+    /*-webkit-transition: all .5s;*/
+    /*-moz-transition: all .5s;*/
+    /*transition: all .5s;*/
+  /*}*/
+
+  /*#searchInput:focus {*/
+    /*width: 900px;*/
+  /*}*/
+
+  #sideNav {
+    position: fixed;
+    top: 36px;
+    left: -160px;
+    transition: 0.3s;
+    height: 100vh;
+    /* width: 60px; */
+    /* background: url("bgac.jpg") repeat-y top left; */
+    /* text-decoration: none; */
+    /* border-radius: 0 5px 5px 0; */
+  }
+
+  #sideNav:hover {
+    left: -5px;
+    /* width: 250px; */
+  }
+
+  .labelIcon:hover {
+    cursor: pointer
+  }
+}
+
+/* Mobile */
+@media (max-width: 899px) {
+  #navBar {
+    position: fixed;
+    top: -15px;
+  }
+
+  #appContent {
+    /*position: fixed;*/
+    height: 95%;
+    padding-top: 65px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  #sideNav {
+    position: fixed;
+    top: 36px;
+    left: -255px;
+    transition: 0.3s;
+    height: 100vh;
+
+    /* width: 60px; */
+    /* background: url("bgac.jpg") repeat-y top left; */
+    /* text-decoration: none; */
+    /* border-radius: 0 5px 5px 0; */
+  }
+}
